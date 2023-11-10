@@ -15,7 +15,7 @@ function Item({todo, removeItem, updateItem}) {
             style = {{textDecoration:(todo.done ? "line-through":"none")}} 
             value={title} className="todoInput" />
             <button onClick={(e)=>{todo.title = title; updateItem(todo);
-            }}>확인</button>
+            }}>수정</button>
             <button onClick={(e)=>{removeItem(todo);
             }}>삭제</button>
           </li>);
