@@ -7,6 +7,7 @@ function Input(props){
         할 일: <input type="text" value={Inputval} onChange={(e)=>{setInputval(e.target.value)}}/>
         <button onClick={function(event){
             addItem(Inputval);
+            setInputval("");
         }}>저장</button>
       </div>);
 }
